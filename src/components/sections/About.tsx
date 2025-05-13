@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import selfImage from '../../img/self.png';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -77,7 +78,7 @@ const About = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <img
-                src="https://images.pexels.com/photos/5325840/pexels-photo-5325840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src={selfImage}
                 alt="Roshan Nyoupane"
                 className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-110"
               />
