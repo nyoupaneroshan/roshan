@@ -2,6 +2,9 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, ArrowRight, Search } from 'lucide-react';
+import okhatiImage from '../../img/okhati.png';
+
+
 
 type Project = {
   id: number;
@@ -22,7 +25,7 @@ const Projects = () => {
     triggerOnce: true,
     threshold: 0.1,
   });
-  
+
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   
@@ -34,12 +37,11 @@ const Projects = () => {
       title: 'Okhati Nepal',
       category: 'E-commerce',
       description: 'A fully responsive e-commerce platform with a modern design and seamless user experience.',
-      image: 'https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: '../../img/okhati.png',
       status:'live',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       links: {
-        live: 'https://example.com',
-        github: 'https://github.com/',
+        live: 'https://okhatinepal.com.np'
       },
     },
     {
@@ -51,7 +53,7 @@ const Projects = () => {
       status:'live',
       tags: ['React Native', 'Firebase', 'Redux', 'Expo'],
       links: {
-        live: 'https://example.com',
+        live: 'https://www.sunfloweracademy.edu.np/',
       },
     },
     {
@@ -291,6 +293,19 @@ const Projects = () => {
                         View Details
                         <ArrowRight size={16} className="ml-1" />
                       </a>
+{/*                       
+                      <a
+                        href={project.links.live || project.links.github || '#'}
+                        target={hasLinks ? "_blank" : undefined}
+                        rel={hasLinks ? "noopener noreferrer" : undefined}
+                        className={`text-sm font-medium text-blue-800 dark:text-blue-400 flex items-center ${
+                          !hasLinks ? 'opacity-50 cursor-not-allowed' : 'hover:underline'
+                        }`}
+                        onClick={(e) => !hasLinks && e.preventDefault()} // Prevent default if no link
+                      >
+                        View Details
+                        <ArrowRight size={16} className="ml-1" />
+                      </a> */}
                     </div>
                   </div>
                 </motion.div>
