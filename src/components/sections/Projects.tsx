@@ -9,6 +9,7 @@ type Project = {
   category: string;
   description: string;
   image: string;
+  status:string;
   tags: string[];
   links: {
     live?: string;
@@ -25,15 +26,16 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   
-  const categories = ['All', 'Web Design', 'Development', 'UI/UX', 'Mobile'];
+  const categories = ['All', 'Web Design', 'E-commerce', 'Full Stack'];
   
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      category: 'Development',
+      title: 'Okhati Nepal',
+      category: 'E-commerce',
       description: 'A fully responsive e-commerce platform with a modern design and seamless user experience.',
       image: 'https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      status:'live',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       links: {
         live: 'https://example.com',
@@ -42,10 +44,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Health & Fitness App',
-      category: 'Mobile',
+      title: 'Sunflower Academy',
+      category: 'Web Design',
       description: 'A mobile application for tracking workouts, nutrition, and overall health progress.',
       image: 'https://images.pexels.com/photos/4553618/pexels-photo-4553618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      status:'live',
       tags: ['React Native', 'Firebase', 'Redux', 'Expo'],
       links: {
         live: 'https://example.com',
@@ -57,6 +60,7 @@ const Projects = () => {
       category: 'Web Design',
       description: 'A complete redesign of a corporate website focusing on brand identity and user engagement.',
       image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      status:'live',
       tags: ['HTML', 'CSS', 'JavaScript', 'Figma'],
       links: {
         live: 'https://example.com',
@@ -69,6 +73,7 @@ const Projects = () => {
       category: 'UI/UX',
       description: 'A comprehensive task management dashboard with intuitive controls and visual analytics.',
       image: 'https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      status:'live',
       tags: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping'],
       links: {
         live: 'https://example.com',
@@ -80,6 +85,7 @@ const Projects = () => {
       category: 'Mobile',
       description: 'A feature-rich travel booking application for seamless vacation planning and booking.',
       image: 'https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      status:'live',
       tags: ['Flutter', 'Dart', 'Firebase', 'Google Maps API'],
       links: {
         github: 'https://github.com/',
@@ -91,6 +97,7 @@ const Projects = () => {
       category: 'Web Design',
       description: 'A personal portfolio website showcasing projects and skills with an elegant design.',
       image: 'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      status:'ofline',
       tags: ['React', 'TailwindCSS', 'Framer Motion', 'Netlify'],
       links: {
         live: 'https://example.com',
@@ -109,6 +116,7 @@ const Projects = () => {
       filtered = filtered.filter(project => 
         project.title.toLowerCase().includes(query) ||
         project.description.toLowerCase().includes(query) ||
+        project.status.toLowerCase().includes(query) ||
         project.tags.some(tag => tag.toLowerCase().includes(query))
       );
     }
@@ -187,7 +195,7 @@ const Projects = () => {
               className="text-center py-12"
             >
               <p className="text-neutral-600 dark:text-neutral-400">
-                No projects found matching your criteria.
+              No projects match your search.
               </p>
             </motion.div>
           ) : (
@@ -224,10 +232,16 @@ const Projects = () => {
                         </span>
                         <h3 className="text-xl font-medium mt-1">{project.title}</h3>
                       </div>
+                      <span className={`px-2 py-1 text-xs rounded-full ${
+                        project.status === 'live' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'
+                      }`}>
+                        {project.status}
+                      </span>
                     </div>
                     
                     <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-4">
                       {project.description}
+                     
                     </p>
                     
                     <div className="flex flex-wrap gap-2 mb-4">
