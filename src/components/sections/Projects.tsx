@@ -37,9 +37,9 @@ const Projects = () => {
       title: 'Okhati Nepal',
       category: 'E-commerce',
       description: 'A fully responsive e-commerce platform with a modern design and seamless user experience.',
-      image: '../../img/okhati.png',
+      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/okhati.png',
       status:'live',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      tags: ['Wordpress', 'Wocommerce' , 'IMEPay'],
       links: {
         live: 'https://okhatinepal.com.np'
       },
@@ -51,14 +51,14 @@ const Projects = () => {
       description: 'A mobile application for tracking workouts, nutrition, and overall health progress.',
       image: 'https://images.pexels.com/photos/4553618/pexels-photo-4553618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       status:'live',
-      tags: ['React Native', 'Firebase', 'Redux', 'Expo'],
+      tags: ['React', 'Tailwind CSS', 'Typescript', 'Vite'],
       links: {
         live: 'https://www.sunfloweracademy.edu.np/',
       },
     },
     {
       id: 3,
-      title: 'Corporate Website Redesign',
+      title: 'Saunak Bhatta',
       category: 'Web Design',
       description: 'A complete redesign of a corporate website focusing on brand identity and user engagement.',
       image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -71,7 +71,7 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'Task Management Dashboard',
+      title: '11 TechMedia',
       category: 'UI/UX',
       description: 'A comprehensive task management dashboard with intuitive controls and visual analytics.',
       image: 'https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -83,7 +83,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Travel Booking App',
+      title: 'United Holidays',
       category: 'Mobile',
       description: 'A feature-rich travel booking application for seamless vacation planning and booking.',
       image: 'https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -95,14 +95,14 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: 'Portfolio Website',
+      title: 'DRC Nepal',
       category: 'Web Design',
       description: 'A personal portfolio website showcasing projects and skills with an elegant design.',
       image: 'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       status:'ofline',
       tags: ['React', 'TailwindCSS', 'Framer Motion', 'Netlify'],
       links: {
-        live: 'https://example.com',
+        live: 'https://drcn.com.np',
         github: 'https://github.com/',
       },
     },
