@@ -98,13 +98,16 @@ const About = () => {
               variants={containerVariants}
             >
               <motion.p variants={itemVariants}>
-                Hi there! I'm Roshan Nyoupane, a passionate professional dedicated to creating exceptional digital experiences that blend creativity with technical expertise.
+              Hi, I’m Roshan Nyoupane — a results-driven digital professional based in Kathmandu, Nepal, with over 5 years of experience in designing and developing impactful digital solutions.
               </motion.p>
               <motion.p variants={itemVariants}>
-                With a strong background in design and development, I approach each project with a focus on solving real problems and delivering solutions that exceed expectations.
+              My work sits at the intersection of creativity and technology. Whether it's building a user-friendly website, crafting a strong digital brand, or developing custom tools that solve real-world problems, I approach every project with purpose and precision.
               </motion.p>
               <motion.p variants={itemVariants}>
-                When I'm not immersed in work, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities to fuel my creativity.
+              I specialize in delivering solutions that not only look great but also perform seamlessly — always aligned with client goals and user needs. From startups to established brands, I’ve helped businesses elevate their online presence through thoughtful design, clean code, and strategic execution.
+              </motion.p>
+              <motion.p variants={itemVariants}>
+              Beyond the screen, I’m always exploring emerging tech trends, contributing to open-source initiatives, and enjoying the outdoors to recharge and find new inspiration.
               </motion.p>
             </motion.div>
             

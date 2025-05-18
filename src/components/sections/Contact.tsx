@@ -35,13 +35,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'contact@example.com',
+      content: 'roshan@11techmedia.com.np',
     },
-    {
-      icon: Phone,
-      title: 'Phone',
-      content: '+977 9876543210',
-    },
+    // {
+    //   icon: Phone,
+    //   title: 'Phone'
+    //   // content: '+977 9876543210',
+    // },
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -176,16 +176,16 @@ const Contact = () => {
               ))}
             </div>
             
-            <motion.div 
+            {/* <motion.div 
               className="flex space-x-4 mt-8"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.6, duration: 0.5 }}
             >
-              {['github', 'linkedin', 'twitter', 'instagram'].map((social) => (
+              {['Github', 'LinkedIn', 'X', 'instagram'].map((social) => (
                 <a 
                   key={social}
-                  href={`https://${social}.com/`}
+                  href={`https://${social}.com/nyoupaneroshan`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white dark:bg-neutral-800 shadow-sm hover:shadow-md transition-shadow duration-300 text-neutral-700 dark:text-neutral-300 hover:text-blue-800 dark:hover:text-blue-400"
@@ -198,7 +198,7 @@ const Contact = () => {
                   />
                 </a>
               ))}
-            </motion.div>
+            </motion.div> */}
           </motion.div>
           
           <motion.div 
@@ -255,7 +255,7 @@ const Contact = () => {
                         ? 'border-red-500 dark:border-red-400' 
                         : 'border-neutral-300 dark:border-neutral-600'
                     } bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent transition-colors duration-200`}
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                   />
                   {errors.name && (
                     <motion.p 
@@ -286,7 +286,7 @@ const Contact = () => {
                         ? 'border-red-500 dark:border-red-400' 
                         : 'border-neutral-300 dark:border-neutral-600'
                     } bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent transition-colors duration-200`}
-                    placeholder="john@example.com"
+                    placeholder="your@example.com"
                   />
                   {errors.email && (
                     <motion.p 
