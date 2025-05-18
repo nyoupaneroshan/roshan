@@ -117,9 +117,9 @@ const About = () => {
             >
               {[
                 { title: "Location", value: "Kathmandu, Nepal" },
-                { title: "Experience", value: "5+ Years" },
-                { title: "Email", value: "contact@example.com" },
-                { title: "Languages", value: "English, Nepali" },
+                { title: "Experience", value: "7+ Years" },
+                { title: "Email", value: "roshan@11techmedia.com.np" },
+                { title: "Languages", value: "English, Nepali, Hindi" },
               ].map((item, index) => (
                 <motion.div
                   key={item.title}
