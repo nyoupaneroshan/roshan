@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
+// import { Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:contact@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/nyoupaneroshan/', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/roshan-nyoupane/', label: 'LinkedIn' },
+    // { icon: Twitter, href: 'https://twitter.com/', label: 'Twitter' },
+    { icon: Mail, href: 'mailto:roshan@11techmedia.com.np', label: 'Email' },
   ];
 
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
             <p className="mt-2 text-neutral-600 dark:text-neutral-400 max-w-md">
               Creating meaningful digital experiences through thoughtful design and development.
             </p>
-          </div>
+          </div> 
           
           <div className="flex space-x-4">
             {socialLinks.map((social) => (
@@ -44,7 +45,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-8 border-t border-neutral-200 dark:border-neutral-700 text-center text-sm text-neutral-600 dark:text-neutral-400">
-          <p>© {currentYear} Roshan Nyoupane. All rights reserved.</p>
+          <p>© {currentYear} <a href="https://11techmedia.com.np">Roshan Nyoupane</a>. All rights reserved.</p>
         </div>
       </div>
     </footer>
