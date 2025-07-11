@@ -49,7 +49,7 @@ const Projects = () => {
       title: 'Sunflower Academy',
       category: 'Web Design',
       description: 'A fully responsive website for school with modern design and seamless user experience.',
-      image: 'https://images.pexels.com/photos/4553618/pexels-photo-4553618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/sunflower.png',
       status:'live',
       tags: ['React', 'Tailwind CSS', 'Typescript', 'Vite'],
       links: {
@@ -61,7 +61,7 @@ const Projects = () => {
       title: 'Saunak Bhatta',
       category: 'Web Design',
       description: 'A complete redesign of a personal website tailored to requirement and increase user engagement.',
-      image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/saunak.png',
       status:'live',
       tags: ['HTML', 'CSS', 'JavaScript', 'Figma'],
       links: {
@@ -74,7 +74,7 @@ const Projects = () => {
       title: '11 TechMedia',
       category: 'UI/UX',
       description: 'description here',
-      image: 'https://images.pexels.com/photos/8566472/pexels-photo-8566472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/11techmedia.png',
       status:'live',
       tags: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping'],
       links: {
@@ -86,7 +86,7 @@ const Projects = () => {
       title: 'United Holidays',
       category: 'Mobile',
       description: 'A feature-rich travel booking application for seamless vacation planning and booking.',
-      image: 'https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/unitedholidays.png',
       status:'live',
       tags: ['Flutter', 'Dart', 'Firebase', 'Google Maps API'],
       links: {
@@ -98,7 +98,7 @@ const Projects = () => {
       title: 'DRC Nepal',
       category: 'Web Design',
       description: 'A personal portfolio website showcasing projects and skills with an elegant design.',
-      image: 'https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/drcn.png',
       status:'ofline',
       tags: ['React', 'TailwindCSS', 'Framer Motion', 'Netlify'],
       links: {
