@@ -98,7 +98,7 @@ const About = () => {
               variants={containerVariants}
             >
               <motion.p variants={itemVariants}>
-              Hi, I’m Roshan Nyoupane — a results-driven digital professional based in Kathmandu, Nepal, with over 5 years of experience in designing and developing impactful digital solutions.
+              Hi, I’m Roshan Nyoupane — a results-driven digital professional based in Kathmandu, Nepal, with over 7+ years of experience in designing and developing impactful digital solutions.
               </motion.p>
               <motion.p variants={itemVariants}>
               My work sits at the intersection of creativity and technology. Whether it's building a user-friendly website, crafting a strong digital brand, or developing custom tools that solve real-world problems, I approach every project with purpose and precision.

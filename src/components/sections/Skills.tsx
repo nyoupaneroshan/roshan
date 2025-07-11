@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, Layout, LineChart, Settings, Terminal, Zap } from 'lucide-react';
+import { Code, Layout, Lightbulb, LineChart, Settings, Terminal, Zap } from 'lucide-react';
 
 type Skill = {
   name: string;
@@ -41,39 +41,39 @@ const Skills = () => {
 
   const skills: Skill[] = [
     {
-      name: 'UI/UX Design',
+      name: 'Web Development ',
       icon: Layout,
-      description: 'Creating intuitive and beautiful user interfaces',
-      level: 90,
-    },
-    {
-      name: 'Frontend Development',
-      icon: Code,
-      description: 'Building responsive and interactive websites',
+      description: 'Developing responsive, secure, and scalable full-stack websites using modern frameworks (React, Node.js, PHP) and robust UI/UX practices.',
       level: 85,
     },
     {
-      name: 'Backend Development',
+      name: 'Graphics Designing',
+      icon: Code,
+      description: 'Crafting visually compelling designs for branding, marketing campaigns, and digital platforms using Adobe Photoshop, Illustrator, Canva, and AI tools.',
+      level: 90,
+    },
+    {
+      name: 'Video Editing and Motion Graphics',
       icon: Terminal,
-      description: 'Developing robust server-side applications',
+      description: 'Editing and producing compelling short-form video content, ads, and animations for digital campaigns using Adobe Premiere Pro, Final Cut Pro, and CapCut.',
       level: 80,
     },
     {
-      name: 'Data Analysis',
+      name: 'Digital Marketing',
       icon: LineChart,
-      description: 'Extracting insights from complex datasets',
+      description: 'Executing data-driven digital marketing campaigns across social media, SEO, Google Ads, and email marketing to boost brand visibility, engagement, and ROI.',
       level: 75,
     },
     {
-      name: 'DevOps',
-      icon: Settings,
-      description: 'Streamlining development and deployment processes',
+      name: 'UI/UX Design & Content Creation',
+      icon: Zap,
+      description: 'Designing intuitive user interfaces and compelling user experiences, along with creating diverse digital content including engaging ad copy, blogs, and branding assets.',
       level: 70,
     },
     {
-      name: 'Performance Optimization',
-      icon: Zap,
-      description: 'Enhancing application speed and efficiency',
+      name: 'Strategic Program Management',
+      icon: Lightbulb,
+      description: 'Leading strategic planning, team leadership, and cross-functional coordination for impactful digital literacy and civic engagement programs, ensuring stakeholder alignment and measurable impact.',
       level: 85,
     },
   ];
@@ -98,7 +98,7 @@ const Skills = () => {
             className="text-neutral-700 dark:text-neutral-300"
             variants={itemVariants}
           >
-            My expertise spans across various domains, allowing me to tackle complex projects and deliver comprehensive solutions.
+            My expertise spans across various domains, allowing me to tackle complex projects and deliver comprehensive solutions as per your requirement.
           </motion.p>
         </motion.div>
 
