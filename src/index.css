@@ -101,3 +101,34 @@
     transparent 100%
   );
 }
+
+/* Add this to your global CSS file */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* For the subtle dot pattern */
+.dot-grid-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px); /* Light dots */
+  background-size: 20px 20px;
+  opacity: 0.1; /* Very subtle */
+  z-index: 1; /* Ensure it's above background gradients but below content */
+}
+
+.dark .dot-grid-overlay::before {
+  background-image: radial-gradient(circle, #4b5563 1px, transparent 1px); /* Dark dots */
+}

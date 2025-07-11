@@ -63,7 +63,7 @@ const projects = [
     description: 'A complete redesign and development of a personal portfolio website, tailored to specific requirements to enhance user engagement and visual appeal.',
     image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/saunak.png',
     status: 'live',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Figma'], // Figma here suggests UI/UX input, but the output is Web Dev
+    tags: ['HTML', 'CSS', 'JavaScript', 'Figma', 'PHP'], // Figma here suggests UI/UX input, but the output is Web Dev
     links: {
       live: 'https://example.com', // Replace with actual live link if available
       github: 'https://github.com/', // Replace with actual GitHub link if available
@@ -101,7 +101,7 @@ const projects = [
     description: 'A responsive personal portfolio website showcasing diverse projects and skills with a clean, modern, and elegant design.',
     image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/drcn.png',
     status: 'live',
-    tags: ['React', 'TailwindCSS', 'Framer Motion', 'Netlify'],
+    tags: ['SEO', 'Wordpress', 'Frontend'],
     links: {
       live: 'https://drcn.com.np',
       github: 'https://github.com/', // Replace with actual GitHub link if available
