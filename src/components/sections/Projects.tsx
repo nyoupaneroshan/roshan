@@ -29,7 +29,7 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   
-  const categories = ['All', 'Web Development', 'E-commerce', 'UI/UX Design', 'Digital Marketing', 'Full-Stack'];
+  const categories = ['All', 'Web Development', 'E-commerce', 'UI/UX Design', 'Digital Marketing'];
 
 const projects = [
   {
@@ -125,7 +125,7 @@ const projects = [
     title: 'Rajdhani Bulletin',
     category: 'Web Development', // Assuming you built the news portal
     description: 'Developed a dynamic news portal for real-time updates and trending news, optimized for readability and user engagement.',
-    image: 'path/to/trendingkhabar.png', // Add actual image path
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/rajdhanibulletin.png', // Add actual image path
     status: 'live',
     tags: ['WordPress', 'News Portal', 'Content Management'],
     links: {
@@ -137,7 +137,7 @@ const projects = [
     title: 'Yashaswee Legal Counsel',
     category: 'Web Development',
     description: 'Created a professional website for a legal consultancy, providing clear information on services and facilitating client outreach.',
-    image: 'path/to/yashasweelegalcounsel.png', // Add actual image path
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/yashasweelegalcounsel.png', // Add actual image path
     status: 'live',
     tags: ['WordPress', 'Business Website', 'Legal'],
     links: {
@@ -149,7 +149,7 @@ const projects = [
     title: 'Maryada.org',
     category: 'Web Development', // Or 'Non-profit Website' if you want a more specific category
     description: 'Developed an informative website for an NGO, aimed at raising awareness and facilitating their outreach and initiatives.',
-    image: 'path/to/maryada.png', // Add actual image path
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/maryadafoundation.png', // Add actual image path
     status: 'live',
     tags: ['WordPress', 'NGO', 'Social Impact'],
     links: {
@@ -157,11 +157,11 @@ const projects = [
     },
   },
   {
-  id: 8, // Use a new ID, e.g., 8, assuming Maryada.org was 10
+  id: 11, // Use a new ID, e.g., 8, assuming Maryada.org was 10
   title: 'White Happydent Toothpaste Digital Campaign',
   category: 'Digital Marketing', // This aligns with your role and skills
   description: 'Executed data-driven Facebook and Instagram campaigns, improving engagement by 25% and click-through rates by 15% for a leading toothpaste brand. Launched SEO-optimized website (whitehappydent.com) to drive conversions.', // Directly uses quantifiable achievements from your CV
-  image: 'path/to/whitehappydent.png', // **Crucial: Add an actual image path for this project**
+  image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/whitehappydent.png', // **Crucial: Add an actual image path for this project**
   status: 'live', // Assuming the campaigns/website are ongoing or were live
   tags: ['Facebook Ads', 'Instagram Ads', 'SEO', 'Content Strategy', 'Social Media Marketing', 'Google Ads'], // Relevant tags based on your CV
   links: {
