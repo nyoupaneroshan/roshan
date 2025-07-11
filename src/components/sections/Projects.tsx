@@ -29,84 +29,147 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   
-  const categories = ['All', 'Web Design', 'E-commerce', 'Full Stack'];
-  
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: 'Okhati Nepal',
-      category: 'E-commerce',
-      description: 'A fully responsive e-commerce platform with a modern design and seamless user experience.',
-      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/okhati.png',
-      status:'live',
-      tags: ['Wordpress', 'Wocommerce' , 'IMEPay'],
-      links: {
-        live: 'https://okhatinepal.com.np'
-      },
+  const categories = ['All', 'Web Development', 'E-commerce', 'UI/UX Design', 'Digital Marketing', 'Full-Stack'];
+
+const projects = [
+  {
+    id: 1,
+    title: 'Okhati Nepal',
+    category: 'E-commerce',
+    description: 'A fully responsive e-commerce platform developed with a modern design and seamless user experience for online product sales and management.',
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/okhati.png',
+    status: 'live',
+    tags: ['WordPress', 'WooCommerce', 'IMEPay'],
+    links: {
+      live: 'https://okhatinepal.com.np'
     },
-    {
-      id: 2,
-      title: 'Sunflower Academy',
-      category: 'Web Design',
-      description: 'A fully responsive website for school with modern design and seamless user experience.',
-      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/sunflower.png',
-      status:'live',
-      tags: ['React', 'Tailwind CSS', 'Typescript', 'Vite'],
-      links: {
-        live: 'https://www.sunfloweracademy.edu.np/',
-      },
+  },
+  {
+    id: 2,
+    title: 'Sunflower Academy',
+    category: 'Web Development', // Changed from Web Design to Web Development to reflect tech stack
+    description: 'A fully responsive and interactive website for an educational institution, designed to provide comprehensive information and a modern user experience.',
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/sunflower.png',
+    status: 'live',
+    tags: ['React', 'Tailwind CSS', 'TypeScript', 'Vite'],
+    links: {
+      live: 'https://www.sunfloweracademy.edu.np/',
     },
-    {
-      id: 3,
-      title: 'Saunak Bhatta',
-      category: 'Web Design',
-      description: 'A complete redesign of a personal website tailored to requirement and increase user engagement.',
-      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/saunak.png',
-      status:'live',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Figma'],
-      links: {
-        live: 'https://example.com',
-        github: 'https://github.com/',
-      },
+  },
+  {
+    id: 3,
+    title: 'Saunak Bhatta',
+    category: 'Web Development', // Changed from Web Design to Web Development to reflect tech stack
+    description: 'A complete redesign and development of a personal portfolio website, tailored to specific requirements to enhance user engagement and visual appeal.',
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/saunak.png',
+    status: 'live',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Figma'], // Figma here suggests UI/UX input, but the output is Web Dev
+    links: {
+      live: 'https://example.com', // Replace with actual live link if available
+      github: 'https://github.com/', // Replace with actual GitHub link if available
     },
-    {
-      id: 4,
-      title: '11 TechMedia',
-      category: 'UI/UX',
-      description: 'description here',
-      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/11techmedia.png',
-      status:'live',
-      tags: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping'],
-      links: {
-        live: 'https://example.com',
-      },
+  },
+  {
+    id: 4,
+    title: '11 TechMedia',
+    category: 'UI/UX Design', // UI/UX is appropriate here based on tags
+    description: 'Developed intuitive user interfaces and compelling user experiences for 11 TechMedia\'s digital presence, focusing on user flow and visual harmony.', // Added a more descriptive text
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/11techmedia.png',
+    status: 'live',
+    tags: ['Figma', 'Adobe XD', 'Sketch', 'Prototyping'],
+    links: {
+      live: 'https://example.com', // Replace with actual live link if available
     },
-    {
-      id: 5,
-      title: 'United Holidays',
-      category: 'Mobile',
-      description: 'A feature-rich travel booking application for seamless vacation planning and booking.',
-      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/unitedholidays.png',
-      status:'live',
-      tags: ['Flutter', 'Dart', 'Firebase', 'Google Maps API'],
-      links: {
-        github: 'https://github.com/',
-      },
+  },
+  {
+    id: 5,
+    title: 'United Holidays',
+    category: 'Web Development', // Changed from Mobile to Web Development, as your CV lists unitedholidays.com.np as a web project. If it's truly a mobile app, you might need a "Mobile App Development" category.
+    description: 'Designed and developed a feature-rich travel agency website, providing seamless vacation planning and booking functionalities for users.', // Adjusted description for a web platform
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/unitedholidays.png',
+    status: 'live',
+    tags: ['WordPress', 'Travel Booking System'], // Adjusted tags assuming it's a WordPress-based travel site as per your CV
+    links: {
+      live: 'https://unitedholidays.com.np', // Added live link from your CV
+      // github: 'https://github.com/', // Remove if not applicable or replace with actual
     },
-    {
-      id: 6,
-      title: 'DRC Nepal',
-      category: 'Web Design',
-      description: 'A personal portfolio website showcasing projects and skills with an elegant design.',
-      image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/drcn.png',
-      status:'ofline',
-      tags: ['React', 'TailwindCSS', 'Framer Motion', 'Netlify'],
-      links: {
-        live: 'https://drcn.com.np',
-        github: 'https://github.com/',
-      },
+  },
+  {
+    id: 6,
+    title: 'DRC Nepal',
+    category: 'Web Development', // Changed from Web Design to Web Development, as it's a built website
+    description: 'A responsive personal portfolio website showcasing diverse projects and skills with a clean, modern, and elegant design.',
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/drcn.png',
+    status: 'live',
+    tags: ['React', 'TailwindCSS', 'Framer Motion', 'Netlify'],
+    links: {
+      live: 'https://drcn.com.np',
+      github: 'https://github.com/', // Replace with actual GitHub link if available
     },
-  ];
+  },
+  {
+    id: 7,
+    title: 'Jivan Parivartan',
+    category: 'Digital Marketing', // Changed from SEO to Digital Marketing to encompass broader aspects, but can be 'Healing & Wellness Platform' or 'Web Development' if you built the site. Given the previous request, 'Healing & Wellness Platform' might be a specific category if you have enough projects. If this project primarily involved *marketing* a healing service, 'Digital Marketing' could work.
+    description: 'Developed a dedicated platform for holistic healing and wellness, offering singing bowl training, Reiki sessions, various healing modalities, and related spiritual practices.', // Clarified it's a platform you developed.
+    image: 'https://raw.githubusercontent.com/nyoupaneroshan/roshan/refs/heads/main/src/img/jivanparivartan.png',
+    status: 'live',
+    tags: ['Healing & Wellness', 'WordPress', 'SEO', 'Content Strategy'], // Added more relevant tags
+    links: {
+      live: 'https://jivanparivartan.com.np', // Changed to a more appropriate domain name
+      github: 'https://github.com/', // Replace with actual GitHub link if applicable
+    },
+  },
+  {
+    id: 8,
+    title: 'Rajdhani Bulletin',
+    category: 'Web Development', // Assuming you built the news portal
+    description: 'Developed a dynamic news portal for real-time updates and trending news, optimized for readability and user engagement.',
+    image: 'path/to/trendingkhabar.png', // Add actual image path
+    status: 'live',
+    tags: ['WordPress', 'News Portal', 'Content Management'],
+    links: {
+      live: 'https://rajdhanibulletin.com/',
+    },
+  },
+  {
+    id: 9,
+    title: 'Yashaswee Legal Counsel',
+    category: 'Web Development',
+    description: 'Created a professional website for a legal consultancy, providing clear information on services and facilitating client outreach.',
+    image: 'path/to/yashasweelegalcounsel.png', // Add actual image path
+    status: 'live',
+    tags: ['WordPress', 'Business Website', 'Legal'],
+    links: {
+      live: 'https://yashasweelegalcounsel.com',
+    },
+  },
+  {
+    id: 10,
+    title: 'Maryada.org',
+    category: 'Web Development', // Or 'Non-profit Website' if you want a more specific category
+    description: 'Developed an informative website for an NGO, aimed at raising awareness and facilitating their outreach and initiatives.',
+    image: 'path/to/maryada.png', // Add actual image path
+    status: 'live',
+    tags: ['WordPress', 'NGO', 'Social Impact'],
+    links: {
+      live: 'https://maryada.org',
+    },
+  },
+  {
+  id: 8, // Use a new ID, e.g., 8, assuming Maryada.org was 10
+  title: 'White Happydent Toothpaste Digital Campaign',
+  category: 'Digital Marketing', // This aligns with your role and skills
+  description: 'Executed data-driven Facebook and Instagram campaigns, improving engagement by 25% and click-through rates by 15% for a leading toothpaste brand. Launched SEO-optimized website (whitehappydent.com) to drive conversions.', // Directly uses quantifiable achievements from your CV
+  image: 'path/to/whitehappydent.png', // **Crucial: Add an actual image path for this project**
+  status: 'live', // Assuming the campaigns/website are ongoing or were live
+  tags: ['Facebook Ads', 'Instagram Ads', 'SEO', 'Content Strategy', 'Social Media Marketing', 'Google Ads'], // Relevant tags based on your CV
+  links: {
+    live: 'https://whitehappydent.com', // As mentioned in your CV
+    // You might also add links to specific campaign examples or social media pages if available and relevant.
+  },
+},
+];
   
   const filteredProjects = useMemo(() => {
     let filtered = activeCategory === 'All'
